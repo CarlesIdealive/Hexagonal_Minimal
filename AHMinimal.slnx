@@ -1,3 +1,8 @@
 <Solution>
+  <Folder Name="/Elementos de la solución/">
+    <File Path="Arquitectura Hexagonal.txt" />
+  </Folder>
+  <Project Path="ConsoleApp/ConsoleApp.csproj" Id="acf2aa45-6e49-4a0d-9f07-27757c7ec9e3" />
   <Project Path="Domain/Domain.csproj" Id="48902d50-6e08-417a-b5bb-ca741608c5d7" />
+  <Project Path="JSonRepository/JSonRepository.csproj" Id="b523fd33-34ee-43c4-8f5c-5026f3bfb849" />
 </Solution>

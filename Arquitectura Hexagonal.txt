@@ -1,0 +1,13 @@
+# Los ports son interfaces que necesita saber el Domain para comunicarse con el exterior. 
+# Son los puntos de entrada y salida del Domain, y se dividen en dos tipos:
+# - Primarios: 
+#   - De Entrada: Son los que se comunican con el exterior, es decir, con el mundo real.
+#   - Son los que reciben las solicitudes de los usuarios o de otros sistemas.
+#	- En el caso de una arquitectura Hexagonal en 2 capas:
+#		Se implementan en el proyecto de Dominio, y son los que el Domain necesita para funcionar.
+#		Carpeta Services
+# - Secundarios:
+#	- Se implementan en el Infrastructure, y son los que el Domain ofrece para que otros sistemas puedan comunicarse con él.
+#   - De Salida: Son los que envían las respuestas a los usuarios o a otros sistemas.
+#	- En el caso de una arquitectura Hexagonal en 2 capas:
+#		Se implementan en el proyecto Proyecto JsonRepository

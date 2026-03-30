@@ -9,7 +9,7 @@ public class Product
     public string Name { 
         get => _name; 
         set {
-            if (string.IsNullOrEmpty(_name))
+            if (string.IsNullOrEmpty(value))
             {
                 throw new ArgumentException("Product name cannot be null or empty.");
             }
