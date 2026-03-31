@@ -1,9 +1,6 @@
 ﻿using Domain.Entities;
 using Domain.Ports.Primary;
 using Domain.Ports.Secondary;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Domain.Services
 {
