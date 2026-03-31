@@ -30,6 +30,10 @@ public class Product
     }
 
 
+    public Product()
+    {
+        
+    }
 
 
     public Product(Guid id, string name, decimal price)

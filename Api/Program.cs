@@ -2,7 +2,7 @@ using Domain.Entities;
 using Domain.Ports.Primary;
 using Domain.Ports.Secondary;
 using Domain.Services;
-using JSonRepository;
+using XMLRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +11,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 
 // Dependencia para el documento que utilizamos como repositorio de productos, en este caso un archivo JSON
-string pathFile = Path.Combine(AppContext.BaseDirectory, "products.json");
+//string pathFile = Path.Combine(AppContext.BaseDirectory, "products.json");
+string pathFile = Path.Combine(AppContext.BaseDirectory, "products.xml");
 // Agregamos el servicio de repositorio de productos utilizando la implementación que lee desde un archivo JSON
-builder.Services.AddTransient<IRepository>(provider => new ProductRepository(pathFile));    // Puerto Secundario con Implementación de repositorio
+builder.Services.AddTransient<IRepository>(provider => new XMLProductRepository(pathFile));    // Puerto Secundario con Implementación de repositorio
 builder.Services.AddTransient<IService, ProductService>();  // Puerto Primario con Adaptador de servicio
 
 //Configuramos Swagger para que se muestre en la raíz de la aplicación

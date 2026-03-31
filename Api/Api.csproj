@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
-    <ProjectReference Include="..\JSonRepository\JSonRepository.csproj" />
+    <ProjectReference Include="..\XMLRepository\XMLRepository.csproj" />
   </ItemGroup>
 
 </Project>

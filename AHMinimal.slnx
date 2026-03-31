@@ -6,4 +6,5 @@
   <Project Path="ConsoleApp/ConsoleApp.csproj" Id="acf2aa45-6e49-4a0d-9f07-27757c7ec9e3" />
   <Project Path="Domain/Domain.csproj" Id="48902d50-6e08-417a-b5bb-ca741608c5d7" />
   <Project Path="JSonRepository/JSonRepository.csproj" Id="b523fd33-34ee-43c4-8f5c-5026f3bfb849" />
+  <Project Path="XMLRepository/XMLRepository.csproj" Id="fb5c7754-e7c3-41f3-b576-9e5f01daa456" />
 </Solution>
